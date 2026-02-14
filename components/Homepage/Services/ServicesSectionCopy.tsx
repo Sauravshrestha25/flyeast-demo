@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-const ServicesSection = forwardRef<HTMLElement>((props, ref) => {
+const ServicesSectionMobile = forwardRef<HTMLElement>((props, ref) => {
 
   const textRef1 = React.useRef<HTMLDivElement>(null);
   const textRef2 = React.useRef<HTMLDivElement>(null);
@@ -53,49 +53,29 @@ const ServicesSection = forwardRef<HTMLElement>((props, ref) => {
 
   return (
     <ReactLenis root>
-      <main className="bg-black pt-40" ref={ref} >
-        <section ref={sectionRef} className="text-white w-[90%] mx-auto bg-slate-950  ">
-        
+      <main className="bg-black " ref={ref} >
+        <section ref={sectionRef} className="text-white  bg-slate-950 pt-10 ">
+         <h3 className="text-brand text-4xl py-6 font-primary text-center font-semibold">
+                  Touch the Peaks
+                </h3>
           <div className="grid grid-cols-8 gap-2">
-            {/* Left Column */}
-            {/* <div className="grid gap-2 col-span-4">
-              <figure className=" w-full">
-                <img
-                  src="/images/trek1.png"
-                  alt=""
-                  className="transition-all duration-300 w-full h-96  align-bottom object-cover rounded-md "
-                />
-              </figure>
-              <figure className=" w-full">
-                <img
-                  src="/images/trek1.png"
-                  alt=""
-                  className="transition-all duration-300 w-full h-96  align-bottom object-cover rounded-md "
-                />
-              </figure>
-              <figure className=" w-full">
-                <img
-                  src="/images/helitrek.png"
-                  alt=""
-                  className="transition-all duration-300 w-full h-96  align-bottom object-cover rounded-md "
-                />
-              </figure>
-              <figure className="w-full">
-                <img
-                  src="/images/helitrek.png"
-                  alt=""
-                  className="transition-all duration-300 w-full h-96  align-bottom object-cover rounded-md "
-                />
-              </figure>
-            </div> */}
             {/* Center Column */}
-            <div className="sticky top-0 h-screen w-full col-span-4 flex flex-col gap-20">
-              <div ref={textRef1} className="font-primary text-white text-4xl font-medium leading-[1.2em] ">
-                Walk paths carved by centuries. <br/> Stand where legends stood. <br/> Earn
-                every breathtaking view.
+            <div className="sticky top-0 h-screen w-full col-span-4 flex flex-col justify-center items-center gap-20">
+              <div
+                ref={textRef1}
+                className="font-primary text-white text-2xl font-medium leading-[1.2em] text-center"
+              >
+               
+                Walk paths carved by centuries. <br /> Stand where legends
+                stood. <br /> Earn every breathtaking view.
               </div>
-              <div ref={textRef2} className="font-primary text-white text-4xl font-medium leading-[1.2em] ">
-                Rise above glaciers.
+              <div
+                ref={textRef2}
+                className="font-primary text-white text-2xl font-medium leading-[1.2em] text-center"
+              >
+                or
+                <br />
+                <br /> Rise above glaciers.
                 <br />
                 Witness Everest at sunrise.
                 <br />
@@ -108,28 +88,21 @@ const ServicesSection = forwardRef<HTMLElement>((props, ref) => {
                 <img
                   src="/images/trek1.png"
                   alt=""
-                  className="transition-all duration-300 w-full h-96  align-bottom object-cover rounded-md "
+                  className="transition-all duration-300 w-full h-60  align-bottom object-cover rounded-md "
                 />
               </figure>
               <figure className="w-full">
                 <img
                   src="/images/trek1.png"
                   alt=""
-                  className="transition-all duration-300 w-full h-96  align-bottom object-cover rounded-md "
+                  className="transition-all duration-300 w-full h-60  align-bottom object-cover rounded-md "
                 />
               </figure>
               <figure className="w-full">
                 <img
                   src="/images/helitrek.png"
                   alt=""
-                  className="transition-all duration-300 w-full h-96  align-bottom object-cover rounded-md "
-                />
-              </figure>
-              <figure className="w-full">
-                <img
-                  src="/images/helitrek.png"
-                  alt=""
-                  className="transition-all duration-300 w-full h-96  align-bottom object-cover rounded-md "
+                  className="transition-all duration-300 w-full h-60  align-bottom object-cover rounded-md "
                 />
               </figure>
             </div>
@@ -146,6 +119,6 @@ const ServicesSection = forwardRef<HTMLElement>((props, ref) => {
   );
 });
 
-ServicesSection.displayName = "ServicesSection";
+ServicesSectionMobile.displayName = "ServicesSectionMobile";
 
-export default ServicesSection;
+export default ServicesSectionMobile;

@@ -18,7 +18,7 @@ const Featured = () => {
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: "#section",
-        start: "top 80%",
+        start: "top 95%",
         end: "center 20%",
       }
     })
