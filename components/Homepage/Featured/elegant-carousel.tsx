@@ -146,11 +146,11 @@ export default function ElegantCarousel() {
         background: `radial-gradient(ellipse at 70% 50%, ${currentSlide.accent}20 0%, transparent 70%)`,
       }}
     />
-  <h3 className=' text-center text-white font-bold text-8xl tracking-wide pt-40'>Signature <span className='text-brand'>Himalayan Journeys</span> </h3>
+  <h3 className=' text-center text-white font-bold text-6xl  pt-20'>Signature <span className='text-brand'>Himalayan Journeys</span> </h3>
     <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 min-h-screen">
       
       {/* LEFT SIDE */}
-      <div className="flex items-center px-8 md:px-16 py-20">
+      <div className="flex items-center px-8 md:px-16 py-10">
         <div className="max-w-xl space-y-8">
 
           {/* Slide Counter */}
