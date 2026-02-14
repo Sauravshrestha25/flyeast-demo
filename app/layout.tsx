@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cormorant_Garamond, Montserrat } from "next/font/google";
+import LenisProvider from "@/components/ui/LenisProvider";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cormorant_garmond = Cormorant_Garamond({
+  variable: "--font-primary",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  variable: "--font-secondary",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -25,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cormorant_garmond.variable} ${montserrat.variable} antialiased`}
       >
+        <LenisProvider />
         {children}
+       
       </body>
     </html>
   );
